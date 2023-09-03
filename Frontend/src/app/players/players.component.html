@@ -1,0 +1,63 @@
+
+
+
+    <!-- <table >
+        <tr >
+            <td>Name</td>
+                <td>Age</td>
+                <td>Position</td>
+                <td>Club</td>
+                <td>Nationality</td>
+            
+           
+        </tr>
+    
+        <tr *ngFor="let item of players ">
+             
+                <td>{{item.name}}</td>
+                <td>{{item.age}}</td>
+                <td>{{item.position}}</td>
+                <td>{{item.club}}</td>
+                <td>{{item.nationality}}</td>
+            
+        </tr>
+    
+       
+    </table> -->
+
+
+    <table class="table table-bordered" >
+        <thead>
+          <tr class="table-dark">
+            <th scope="col">Name</th>
+            <th scope="col">Age</th>
+            <th scope="col">Position</th>
+            <th scope="col">Club</th>
+            <th scope="col">Nationality</th>
+            <th scope="col">Update</th>
+            <th scope="col">Delete</th>
+  
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let row of players ">
+            
+            <td>{{row.name}}</td>
+                <td>{{row.age}}</td>
+                <td>{{row.position}}</td>
+                <td>{{row.club}}</td>
+                <td>{{row.nationality}}</td>
+                <td>
+                  <button type="button" class="btn btn-primary" routerLink="/updateplayer/{{row._id}}" >Update</button>
+                </td>
+                <td>
+                  
+                  <button type="button" class="btn btn-primary"  (click)="removeDataFromApi(row)">Delete</button>
+                </td>
+                
+
+          </tr>
+          
+        </tbody>
+      </table>
+

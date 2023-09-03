@@ -1,0 +1,36 @@
+<h3>Update Player</h3>
+<br>
+<div>
+    
+        <div class="form-floating mb-3">
+            <input type="text" class="form-control" id="floatingInput" placeholder="Name" [(ngModel)]="name">
+            <label for="floatingInput">Name</label>
+          </div>
+
+          <div class="form-floating mb-3">
+            <input type="number" class="form-control" id="floatingInput" placeholder="Age" [(ngModel)]="age">
+            <label for="floatingInput">Age</label>
+          </div>
+
+          <div class="form-floating mb-3">
+            <input type="text" class="form-control" id="floatingInput" placeholder="Position" [(ngModel)]="position">
+            <label for="floatingInput">Position</label>
+          </div>
+
+          <div class="form-floating mb-3">
+            <input type="text" class="form-control" id="floatingInput" placeholder="Club" [(ngModel)]="club">
+            <label for="floatingInput">Club</label>
+          </div>
+
+          <div class="form-floating mb-3">
+            <input type="text" class="form-control" id="floatingInput" placeholder="Nationality" [(ngModel)]="nationality">
+            <label for="floatingInput">Nationality</label>
+          </div>
+
+    
+</div>
+
+<button type="button" class="btn btn-primary"  routerLink="/" (click)="editplayerinapi()" >Update</button>
+
+
+
